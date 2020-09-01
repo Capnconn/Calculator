@@ -18,6 +18,10 @@ namespace CalculatorApp
             InitializeComponent();
         }
 
+        public CalculaterGUI(string answer)
+        {
+            textBoxFeed.Text = answer;
+        }
         /* TODO:
             1. Work on differentiating between subtracting sign and negative sign
         */
