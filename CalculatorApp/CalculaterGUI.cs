@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace CalculatorApp
 {
+ /*
+ * Maybe work on completing this calculator appp without the need for
+ * the predefined parser function.
+ */
     public partial class CalculaterGUI : Form
     {
         public CalculaterGUI()
