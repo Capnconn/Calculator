@@ -18,10 +18,6 @@ namespace CalculatorApp
             InitializeComponent();
         }
 
-        public CalculaterGUI(string answer)
-        {
-            textBoxFeed.Text = answer;
-        }
         /* TODO:
             1. Work on differentiating between subtracting sign and negative sign
         */
@@ -93,8 +89,9 @@ namespace CalculatorApp
         {
             /* When the "=" button is clicked all of the numbers that are stored in the output box of the calculater
                are sent as a string to the class "Calculate." */
-
-            Calculate equation = new Calculate(textBoxFeed.Text);
+            DataTable dt = new DataTable();
+            string equation = textBoxFeed.Text;
+            textBoxFeed.Text = (Convert.ToDouble(dt.Compute(equation, ""))).ToString();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
